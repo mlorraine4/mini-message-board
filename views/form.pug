@@ -1,0 +1,8 @@
+extends layout 
+ 
+block content
+    form(method='POST' action='/new')
+        p New Message
+        input#author(name='author' placeholder='author')
+        input#text(name='text' placeholder='your message')
+        button(type='submit') send
